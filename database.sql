@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.0.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 27, 2020 at 03:19 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.3
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -19,7 +10,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `file_upload_tutorial`
+-- Database: `Test`
 --
 
 -- --------------------------------------------------------
@@ -38,7 +29,7 @@ CREATE TABLE `uploaded_files` (
 -- Dumping data for table `uploaded_files`
 --
 
-INSERT INTO `uploaded_files` (`id`, `name`, `new_name`) VALUES
+INSERT INTO `test` (`id`, `name`, `new_name`) VALUES
 (1, 'text-animation.zip', '2711201606481769text-animation.zip'),
 (2, 'TL.png', '2711201606481879TL.png'),
 (3, 'TL.png', '2711201606482588TL.png'),
@@ -46,12 +37,7 @@ INSERT INTO `uploaded_files` (`id`, `name`, `new_name`) VALUES
 (5, 'TL.png', '2711201606482636TL.png'),
 (6, 'text-animation.zip', '2711201606483139text-animation.zip');
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `uploaded_files`
 --
 ALTER TABLE `uploaded_files`
   ADD PRIMARY KEY (`id`);
